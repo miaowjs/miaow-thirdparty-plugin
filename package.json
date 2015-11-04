@@ -1,0 +1,33 @@
+{
+  "name": "miaow-thirdparty-plugin",
+  "description": "第三方脚本文件处理，主要是用来重置任务",
+  "version": "0.0.1",
+  "repository": "miaowjs/miaow-thirdparty-plugin",
+  "author": {
+    "name": "anhulife",
+    "email": "anhulife@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "miaow",
+    "thirdparty",
+    "plugin"
+  ],
+  "dependencies": {
+    "minimatch": "~3.0.0"
+  },
+  "devDependencies": {
+    "miaow": "^5.0.1",
+    "mocha": "^2.3.3",
+    "eslint": "^1.7.2",
+    "eslint-config-airbnb": "^0.1.0",
+    "lodash.find": "^3.2.1"
+  },
+  "scripts": {
+    "postpublish": "cnpm sync miaow-thirdparty-plugin",
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}

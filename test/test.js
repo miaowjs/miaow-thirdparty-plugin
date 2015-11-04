@@ -1,5 +1,4 @@
 var assert = require('assert');
-var find = require('lodash.find');
 var fs = require('fs');
 var miaow = require('miaow');
 var path = require('path');
@@ -29,10 +28,10 @@ describe('miaow-thirdparty-plugin', function() {
   });
 
   it('正常文件', function() {
-    assert.equal(find(log.modules, {src: 'normal.js'}).extra.isThirdparty, undefined);
+    assert.equal(log.modules['normal.js'].extra.isThirdparty, undefined);
   });
 
   it('第三方文件', function() {
-    assert.equal(find(log.modules, {src: 'thirdparty.js'}).extra.isThirdparty, true);
+    assert.equal(log.modules['thirdparty.js'].extra.isThirdparty, true);
   });
 });

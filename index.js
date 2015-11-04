@@ -29,7 +29,7 @@ Thirdparty.prototype.apply = function(compiler) {
 Thirdparty.prototype.check = function(module, taskContext, callback) {
   var options = this.options;
 
-  if (!minimatch(module.src, options.test, {matchBase: true, dot: true})) {
+  if (module.cached || !minimatch(module.src, options.test, {matchBase: true, dot: true})) {
     return callback();
   }
 

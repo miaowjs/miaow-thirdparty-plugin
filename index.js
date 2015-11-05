@@ -1,8 +1,10 @@
+var _ = require('lodash');
 var minimatch = require('minimatch');
 
 function Thirdparty(options) {
-  this.options = options || {test: '*', tasks: []};
+  this.options = _.extend({test: '*', tasks: []}, options || {});
 
+  // 处理参数
   var toString = Object.prototype.toString;
   this.options.tasks = this.options.tasks.map(function(task) {
     if (toString.call(task) === '[object Function]') {

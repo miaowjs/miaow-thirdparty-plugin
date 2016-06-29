@@ -14,8 +14,8 @@
     "plugin"
   ],
   "dependencies": {
-    "lodash": "~3.10.1",
-    "minimatch": "~3.0.0"
+    "lodash": "3.10.1",
+    "minimatch": "3.0.2"
   },
   "devDependencies": {
     "miaow": "^5.1.0",

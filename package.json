@@ -1,7 +1,7 @@
 {
   "name": "miaow-thirdparty-plugin",
   "description": "第三方脚本文件处理，主要是用来重置任务",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "repository": "miaowjs/miaow-thirdparty-plugin",
   "author": {
     "name": "anhulife",
